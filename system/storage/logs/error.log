@@ -1,0 +1,3 @@
+2018-12-30 12:21:39 - PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'test' in C:\Server\OSPanel\domains\anan.kg\system\library\db\mysqli.php on line 7
+2018-12-30 12:21:39 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\Server\OSPanel\domains\anan.kg\system\library\db\mysqli.php on line 10
+2018-12-30 12:21:39 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in C:\Server\OSPanel\domains\anan.kg\system\library\db\mysqli.php on line 10
