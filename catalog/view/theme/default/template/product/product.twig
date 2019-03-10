@@ -127,7 +127,7 @@
             {% endif %}
             <li>{{ text_model }} {{ model }}</li>
             {% if reward %}
-            <li>{{ text_reward }} {{ reward }}</li>
+            <li style="display: none;">{{ text_reward }} {{ reward }}</li>
             {% endif %}
             <li style="display: none;">{{ text_stock }} {{ stock }}</li>
           </ul>
@@ -169,7 +169,7 @@
             <tr>
             <td>
               <label style="font-size: 15px;" class="control-label" for="input-option{{ option.product_option_id }}">{{ option.name }}</label>
-              <select style="font-size: 15px;" name="option[{{ option.product_option_id }}]" id="input-option{{ option.product_option_id }}" class="form-control">
+              <select style="font-size: 15px;" name="option[{{ option.product_option_id }}]" id="input-option{{ option.option_id }}" class="form-control">
                 <!-- <option value="">{{ text_select }}</option> -->
                 {% for option_value in option.product_option_value %}
                 <option style="font-size: 15px;" value="{{ option_value.product_option_value_id }}">{{ option_value.name }}
@@ -179,9 +179,14 @@
                 {% endfor %}
               </select>
             </td>
-            {% if option.product_option_id == 227 %}
-            <td>
-            <button id = "check_size" type="button" data-toggle="modal" data-target="#modal-default" class="btn btn-primary btn-lg btn-block">Check Size</button>
+            {% if option.option_id == 11 %}
+            <td id = "check_size">
+              <span data-toggle="modal" data-target="#modal-check-size">Check Size</span>
+            </td>
+            {% endif %}
+            {% if option.option_id == 13 %}
+            <td id = "check_size">
+              <span data-toggle="modal" data-target="#modal-learn-more">Learn more</span>
             </td>
             {% endif %}
             </tr>
@@ -362,7 +367,7 @@
       {{ content_bottom }}</div>
     {{ column_right }}</div>
 </div>
-<div class="modal fade" id="modal-default">
+<div class="modal fade" id="modal-check-size">
   <div class="modal-dialog">
       <div class="modal-content">
       <div class="modal-header">
@@ -377,6 +382,23 @@
       </div>
   </div>
 </div>
+
+<div class="modal fade" id="modal-learn-more">
+  <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Default Modal</h4>
+      </div>
+      <div class="modal-body">
+      <p>One fine body&hellip;</p>
+      </div>
+          <div class="modal-footer"></div>
+      </div>
+  </div>
+</div>
+
 <script type="text/javascript"><!--
 $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
 	$.ajax({

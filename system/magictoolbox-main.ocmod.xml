@@ -2,7 +2,7 @@
 <modification>
 	<name><![CDATA[MagicToolbox mod for OpenCart]]></name>
         <version><![CDATA[4.4.19]]></version>
-        <code><![CDATA[MagicZoomPlus-main]]></code>
+        <code><![CDATA[MagicZoom-main]]></code>
         <author><![CDATA[magictoolbox.com]]></author>
         <link><![CDATA[http://magictoolbox.com]]></link>
 	<file path="catalog/controller/product/{product,category,manufacturer,search}.php">

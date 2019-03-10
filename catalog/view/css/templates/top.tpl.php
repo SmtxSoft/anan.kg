@@ -5,7 +5,7 @@ if(!empty($magicscroll) && !empty($magicscrollOptions)) {
     $magicscrollOptions = '';
 }
 ?>
-<!-- Begin magiczoomplus -->
+<!-- Begin magiczoom -->
 <div class="MagicToolboxContainer selectorsTop minWidth">
 <?php
 
@@ -27,4 +27,4 @@ if(count($thumbs) > 1) {
 ?>
     <?php echo $main; ?>
 </div>
-<!-- End magiczoomplus -->
+<!-- End magiczoom -->
