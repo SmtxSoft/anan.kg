@@ -421,6 +421,15 @@ $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
 //--></script> 
 <script type="text/javascript"><!--
 $('#button-cart').on('click', function() {
+
+  var size = $("#input-option11 option:selected").text();
+  var addittionalSize = $("#input-option13 option:selected").text();
+
+  if($.trim(size) == $.trim(addittionalSize)){
+    alert("Дополнительный размер не может быть идентичен основному размеру.");
+    return;
+  }
+  
 	$.ajax({
 		url: 'index.php?route=checkout/cart/add',
 		type: 'post',

@@ -496,5 +496,4 @@ $(function(){
     {
 		$("#search, #cart").show();
     }
-
 });

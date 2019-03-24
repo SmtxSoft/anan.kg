@@ -150,7 +150,7 @@
       {% endfor %}
     </fieldset>
     <fieldset>
-      <legend>{{ text_your_password }}</legend>
+      <legend style="display: none;">{{ text_your_password }}</legend>
       <div class="form-group required">
         <label class="control-label" for="input-payment-password">{{ entry_password }}</label>
         <input type="password" name="password" value="" placeholder="{{ entry_password }}" id="input-payment-password" class="form-control" />
@@ -165,8 +165,8 @@
     <fieldset id="address">
       <legend>{{ text_your_address }}</legend>
       <div class="form-group">
-        <label class="control-label" for="input-payment-company">{{ entry_company }}</label>
-        <input type="text" name="company" value="" placeholder="{{ entry_company }}" id="input-payment-company" class="form-control" />
+        <label class="control-label" for="input-payment-company" style="display: none;">{{ entry_company }}</label>
+        <input type="text" name="company" value="12345" placeholder="{{ entry_company }}" style="display: none;" id="input-payment-company" class="form-control" />
       </div>
       <div class="form-group required">
         <label class="control-label" for="input-payment-address-1">{{ entry_address_1 }}</label>

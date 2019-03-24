@@ -29,7 +29,7 @@
     {% set class = 'col-sm-12' %}
     {% endif %}
     <div id="content" class="{{ class }}">{{ content_top }}
-      <h1>{{ heading_title }}
+      <h1 style = "display: none;">{{ heading_title }}
         {% if weight %}
         &nbsp;({{ weight }})
         {% endif %} </h1>
@@ -91,9 +91,9 @@
         </div>
       </form>
       {% if modules %}
-      <h2>{{ text_next }}</h2>
-      <p>{{ text_next_choice }}</p>
-      <div class="panel-group" id="accordion"> {% for module in modules %}
+      <h2 style = "display: none;">{{ text_next }}</h2>
+      <p style = "display: none;">{{ text_next_choice }}</p>
+      <div class="panel-group" id="accordion" style = "display: none;"> {% for module in modules %}
         {{ module }}
         {% endfor %} </div>
       {% endif %} <br />

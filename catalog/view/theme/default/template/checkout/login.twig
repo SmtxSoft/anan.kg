@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-sm-6">
     <h2>{{ text_new_customer }}</h2>
-    <p>{{ text_checkout }}</p>
+    <p style="display: none;">{{ text_checkout }}</p>
     <div class="radio">
       <label> {% if account == 'register' %}
         <input type="radio" name="account" value="register" checked="checked" />
@@ -25,7 +25,7 @@
   </div>
   <div class="col-sm-6">
     <h2>{{ text_returning_customer }}</h2>
-    <p>{{ text_i_am_returning_customer }}</p>
+    <p style = "display: none;">{{ text_i_am_returning_customer }}</p>
     <div class="form-group">
       <label class="control-label" for="input-email">{{ entry_email }}</label>
       <input type="text" name="email" value="" placeholder="{{ entry_email }}" id="input-email" class="form-control" />

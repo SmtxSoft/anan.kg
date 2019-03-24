@@ -833,10 +833,11 @@ body{
     box-shadow: none;
 }
 
-.btn-primary, .btn-danger, .btn-primary:hover, .btn-danger:hover{
+.btn-primary, .btn-danger, .btn-default, .btn-primary:hover, .btn-danger:hover, .btn-default:hover {
 	background-color: #000000;
 	background-image: none;
 	border: 1px solid #000000;
+	color: white;
 }
 
 .alert-success, .alert-danger{
@@ -890,3 +891,4 @@ body{
 #menu .see-all{
 	border-top: 1px solid white;
 }
+

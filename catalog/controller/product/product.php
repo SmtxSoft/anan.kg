@@ -327,7 +327,7 @@ class ControllerProductProduct extends Controller {
 						);
 					}
 				}
-
+				
 				$data['options'][] = array(
 					'product_option_id'    => $option['product_option_id'],
 					'product_option_value' => $product_option_value_data,
